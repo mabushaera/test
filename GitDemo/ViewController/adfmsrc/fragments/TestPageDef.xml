@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.16.48" id="TestPageDef" Package="fragments">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="CountryVO1" RangeSize="25" DataControl="EMCommonAppModuleDataControl" id="CountryVO1Iterator"/>
+  </executables>
+  <bindings>
+    <tree IterBinding="CountryVO1Iterator" id="CountryVO1">
+      <nodeDefinition DefName="com.tamu.edu.view.CountryVO" Name="CountryVO10">
+        <AttrNames>
+          <Item Value="CountryCode"/>
+          <Item Value="CountryName"/>
+          <Item Value="CreateDate"/>
+          <Item Value="CreateUser"/>
+          <Item Value="UpdateDate"/>
+          <Item Value="UpdateUser"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+  </bindings>
+</pageDefinition>

@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BC4JConfig version="11.1" xmlns="http://xmlns.oracle.com/bc4j/configuration">
+   <AppModuleConfigBag ApplicationName="com.tamu.edu.am.EMCommonAppModule">
+      <AppModuleConfig name="EMCommonAppModuleLocal" DeployPlatform="LOCAL" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" ApplicationName="com.tamu.edu.am.EMCommonAppModule" jbo.project="com.tamu.edu.Model">
+         <Database JDBCDataSource="java:comp/env/jdbc/EM_COMMONDS" jbo.TypeMapEntries="OracleApps"/>
+         <Security AppModuleJndiName="com.tamu.edu.am.EMCommonAppModule"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="EMCommonAppModuleShared" DeployPlatform="LOCAL" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" ApplicationName="com.tamu.edu.am.EMCommonAppModule" jbo.project="com.tamu.edu.Model">
+         <AM-Pooling jbo.ampool.isuseexclusive="false" jbo.ampool.maxpoolsize="1"/>
+         <Database JDBCDataSource="java:comp/env/jdbc/EM_COMMONDS" jbo.TypeMapEntries="OracleApps"/>
+         <Security AppModuleJndiName="com.tamu.edu.am.EMCommonAppModule"/>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+</BC4JConfig>

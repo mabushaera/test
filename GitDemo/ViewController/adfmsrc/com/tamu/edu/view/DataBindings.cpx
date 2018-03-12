@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="12.2.1.16.48" id="DataBindings" SeparateXMLFiles="false"
+             Package="com.tamu.edu.view"
+             ClientType="Generic">
+  <definitionFactories>
+    <factory nameSpace="http://xmlns.oracle.com/adf/controller/binding"
+             className="oracle.adf.controller.internal.binding.TaskFlowBindingDefFactoryImpl"/>
+    <dtfactory className="oracle.adf.controller.internal.dtrt.binding.BindingDTObjectFactory"/>
+  </definitionFactories>
+  <pageMap>
+    <page path="/fragments/Test.jsff" usageId="com_tamu_edu_view_TestPageDef"/>
+    <page path="/pages/MyPage.jsf" usageId="com_tamu_edu_view_MyPagePageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="com_tamu_edu_view_TestPageDef" path="fragments.TestPageDef"/>
+    <page id="com_tamu_edu_view_MyPagePageDef" path="pages.MyPagePageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <BC4JDataControl id="EMCommonAppModuleDataControl" Package="com.tamu.edu.am" FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl"
+                     SupportsTransactions="true" SupportsFindMode="true" SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true" Configuration="EMCommonAppModuleLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+  </dataControlUsages>
+</Application>
