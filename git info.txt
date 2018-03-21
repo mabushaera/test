@@ -1,0 +1,64 @@
+
+Q. In git, how you can return to a previous branch like svn do?
+
+https://blog.github.com/2016-10-27-introducing-projects-for-organizations/
+https://softwareengineering.stackexchange.com/questions/161293/choosing-between-single-or-multiple-projects-in-a-git-repository
+
+In GitHub, what is the difference between a repository and a project and organization?
+
+
+A Repository as documented on GitHub:
+A repository is the most basic element of GitHub. They're easiest to imagine as a project's folder. A repository contains all of the project files (including documentation), and stores each file's revision history. Repositories can have multiple collaborators and can be either public or private.
+
+A Project as documented on GitHub:
+Project boards on GitHub help you organize and prioritize your work. You can create project boards for specific feature work, comprehensive roadmaps, or even release checklists. With project boards, you have the flexibility to create customized workflows that suit your needs.
+
+
+Organizations simplify management of group-owned repositories (for example: your company¡¯s code), expand on our permissions system, and help focus your GitHub workflow for business and large open source projects.
+
+
+Differences between user and organization accounts
+Your user account is your identity on GitHub. Your user account can be a member of any number of organizations, regardless of whether the account is on a free or paid plan.
+Personal user accounts
+Every person who uses GitHub has their own user account. These accounts include:
+
+Unlimited public repositories and collaborators for free
+Paid plan with unlimited private repositories
+Ability to invite unlimited repository collaborators
+
+
+Organizations are shared accounts where groups of people can collaborate across many projects at once. Owners and administrators can manage member access to the organization's data and projects with sophisticated security and administrative features.
+
+If you¡¯ve ever had to manage multiple GitHub accounts, desired a company-specific dashboard, wanted to add read-only collaborators, or needed to give someone else administrative control over one of your repositories, you¡¯re going to love Organizations
+
+
+Teams give people access to the organization¡¯s code, making it easy to add or remove people to many repositories at once.
+
+(The Org Constsis of Teams)
+Each team has one of three levels of permission:
+
+Pull Only - This new permission level is useful when you want to give people access to see the code, participate in private issues/wikis, or work in their private fork. These members may not push to the organization owned repository.
+Pull+Push - This is the default permission that collaborators have on GitHub right now. These members can participate in the project and push code, but they may not change the repository¡¯s meta data (name, private/public status, teams, service hooks).
+Pull+Push+Administrative - This new permission level allows you to grant participatory, push and administrative permissions. These members can do anything a repository owner can do.
+https://blog.github.com/2010-06-29-introducing-organizations/
+-------------------------------
+
+How GitHub works with JIRA. Compare between Jira Code Review and GitHub Pull Requests
+
+
+
+Note: the merge conflict may hapen because you run git pull, your partner worked on the same line 
+you worked on too. git will pull the changes with keeping yours and put the signs  <<<<<HEAD
+ 									           your line
+										   ========
+										   your partners line.
+										   >>>>>>>>
+
+
+
+
+
+
+
+
+
